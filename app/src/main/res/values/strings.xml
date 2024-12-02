@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Youtube Auto Skip</string>
+    <string name="label_accessibility">@string/app_name</string>
+    <string name="accessibility_setting_description">Turn on to use Youtube Auto Skip</string>
+</resources>
