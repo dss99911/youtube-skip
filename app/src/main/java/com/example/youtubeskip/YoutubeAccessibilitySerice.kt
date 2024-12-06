@@ -131,7 +131,7 @@ class YoutubeAccessibilitySerice : AccessibilityService() {
         log("ratio : $widthHeightRatio, rect: $rect")
 
         val rectVertical = Rect(getScreenWidth() - dp2px(113), getScreenHeight()/10, getScreenWidth(), getScreenHeight())//there is vertical ad as well
-        val rectHorizontal = Rect(getScreenHeight() - dp2px(113), getScreenWidth() - dp2px(48) - dp2px(36), getScreenHeight(), getScreenWidth() - dp2px(36))
+        val rectHorizontal = Rect(getScreenHeight() / 2, getScreenWidth() - dp2px(48) - dp2px(36), getScreenHeight(), getScreenWidth() - dp2px(36))
         return rect.intersect(rectVertical) || rect.intersect(rectHorizontal)
     }
 
